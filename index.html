@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="This a  sneakers electronic shop" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>sneakers</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav>
+      <div class="container">
+        <!-- toggle -->
+        <button class="toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo-container">
+          <!-- logo -->
+          <a href="index.html"><img src="./images/logo.svg" alt="logo" /></a>
+          <!--links  -->
+          <div class="nav-links">
+            <ul>
+              <li class="nav-link"><a href="#">Collections</a></li>
+              <li class="nav-link"><a href="#">Men</a></li>
+              <li class="nav-link"><a href="#">Women</a></li>
+              <li class="nav-link"><a href="#">About</a></li>
+              <li class="nav-link"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- icons -->
+        <div class="nav-icons">
+          <!-- cart-icon -->
+          <div class="cart-icons">
+            <img src="images/icon-cart.svg" alt="icon-cart" />
+            <span class="prod-num">0</span>
+          </div>
+          <!-- avatr image -->
+          <img
+            src="images/image-avatar.png"
+            class="avatar"
+            alt="image-avatar"
+          />
+          <!-- start cart -->
+          <div class="hidden cart">
+            <header>
+              <h3>cart</h3>
+            </header>
+            <hr />
+            <div class="cart-content">
+              <h4 class="empty-cart hide">Your cart is empty</h4>
+              <!-- <article>
+                <div class="cart-product-img">
+                  <img
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="cart product image"
+                    class="cart-product-image"
+                  />
+                </div>
+                <div class="cart-product-desc">
+                  <h4 class="cart-product-name">Autumn Limited Edition</h4>
+                  <h4 class="amount-cart">
+                    Amount: <span class="amount-count">0</span>
+                  </h4>
+                  <span class="cart-remove">Remove</span>
+                </div>
+              </article> -->
+              <div class="cart-total hide">Total:$120.00</div>
+
+              <button class="checkout">Checkout</button>
+            </div>
+          </div>
+          <!-- end cart -->
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start aside bar -->
+    <div class="sidebar-overlay hide">
+      <aside>
+        <!-- close icon -->
+        <div class="icon">
+          <img
+            src="./images/icon-close.svg"
+            alt="close icon"
+            class="sidebar-close-icon"
+          />
+        </div>
+        <!-- side links -->
+        <div class="sidebar-links">
+          <ul>
+            <li class="sidebar-link"><a href="#">Collections</a></li>
+            <li class="sidebar-link"><a href="#">Men</a></li>
+            <li class="sidebar-link"><a href="#">Women</a></li>
+            <li class="sidebar-link"><a href="#">About</a></li>
+            <li class="sidebar-link"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!-- end sidebar -->
+    <!-- start product section -->
+    <section class="product">
+      <div class="container">
+        <div class="col">
+          <!-- slider -->
+          <div class="slider">
+            <div class="slider-image">
+              <span class="slider-next-btn">&gt;</span>
+              <span class="slider-prev-btn">&lt;</span>
+              <img src="./images/image-product-1.jpg" alt="product image" />
+            </div>
+          </div>
+          <!-- end slider -->
+          <div class="product-big-img">
+            <img src="./images/image-product-1.jpg" alt="product image" />
+          </div>
+          <div class="product-images">
+            <div class="product-img">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                alt=""
+                class="active"
+              />
+            </div>
+            <div class="product-img">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            </div>
+            <div class="product-img">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            </div>
+            <div class="product-img">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- modal slider -->
+        <!--overlay -->
+        <div class="slider-overlay hide">
+          <div class="modal-content">
+            <div class="modal-close">
+              <i class="fas fa-times"></i>
+            </div>
+            <!-- modal content     -->
+            <div class="modal-product-big-img">
+              <span class="modal-next">&gt;</span>
+              <span class="modal-prev">&lt;</span>
+              <img
+                src="./images/image-product-1.jpg"
+                alt="product image"
+                class="modal-big"
+              />
+            </div>
+            <div class="modal-product-images">
+              <div class="modal-product-img">
+                <img
+                  class="active"
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="modal-product-img">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+              </div>
+              <div class="modal-product-img">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+              </div>
+              <div class="modal-product-img">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h2 class="company-name">company name</h2>
+          <h3 class="product-name">product name</h3>
+          <div class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+            expedita numquam nobis, aliquam tempora amet enim odit, esse id ad
+            natus sapiente quibusdam explicabo laborum unde vel, fugiat
+            molestiae architecto.
+          </div>
+          <div class="price">
+            <span class="price-sale">$xx.00</span>
+            <span class="sale">xx%</span>
+            <p class="intial-price">$xx</p>
+          </div>
+          <div class="buttons">
+            <div class="amount">
+              <button class="minus"><i class="fas fa-minus"> </i></button>
+              <p class="amount-value">0</p>
+              <button class="plus"><i class="fas fa-plus"></i></button>
+            </div>
+            <button class="add-to-cart">
+              <i class="fas fa-shopping-cart"></i> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- javascript file -->
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
