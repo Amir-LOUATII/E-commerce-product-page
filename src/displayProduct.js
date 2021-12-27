@@ -19,7 +19,6 @@ const displayProduct = (product) => {
     sale,
     images: { img, thumbnail },
   } = product;
-  console.log(description);
   companyName.textContent = company;
   productName.textContent = name;
   prductDescrition.textContent = description;

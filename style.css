@@ -9,7 +9,6 @@ ul {
 }
 body {
   font-family: "kumbh sans", sans-serif;
-  background-color: var(--White);
 }
 .container {
   padding-left: 15px;
@@ -677,17 +676,18 @@ start products
   text-decoration: line-through;
 }
 
+/* buttons  */
+.product .col:last-of-type .buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 /* styling amount button */
 .product .col:last-of-type .amount {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-@media (max-width: 767px) {
-  .product .col:last-of-type .amount {
-    justify-content: center;
-  }
+  margin-right: 20px;
 }
 
 .product .col:last-of-type .amount button {
@@ -720,7 +720,6 @@ start products
   font-size: 18px;
   color: var(--White);
   border: none;
-  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -730,5 +729,96 @@ start products
 /* 
 ========
 end products
+======== 
+*/
+
+/* 
+========
+start popup
+======== 
+*/
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: fit-content;
+  border-radius: 20px;
+  background-color: var(--White);
+  z-index: 200;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.popup h3 {
+  text-transform: capitalize;
+  padding: 5px;
+  margin: 0;
+}
+
+/* styling popup article */
+
+.popup article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.popup article .popup-product-img img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.popup article article h4 {
+  margin: 0px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.popup article .popup-product-name {
+  color: #888;
+}
+
+.popup article .amount-popup {
+  padding: 2.5px;
+}
+
+.cart .cart-total {
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+/* styling  buttons */
+.popup .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup button {
+  border: none;
+  background-color: var(--Orange);
+  color: var(--White);
+  font-size: 20px;
+  border-radius: 2px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.popup button.cancel {
+  background-color: var(--Pale-orange);
+  color: var(--Orange);
+}
+/* 
+========
+end popup
 ======== 
 */

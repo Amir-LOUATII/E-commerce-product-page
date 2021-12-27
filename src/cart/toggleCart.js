@@ -15,3 +15,9 @@ document.addEventListener("keyup", function (e) {
     cart.classList.add("hidden");
   }
 });
+
+function openCart() {
+  cart.classList.remove("hidden");
+}
+
+export { openCart };

@@ -3,6 +3,7 @@ import "./src/nav.js";
 import "./src/cart/toggleCart.js";
 import "./src/modal/toggleModal.js";
 import "./src/data.js";
+import "./src/popup/togglePopup.js";
 
 // specific import
 import {
@@ -19,7 +20,6 @@ import { amountVariation } from "./src/cart/amount.js";
 import { addTocart, intializeCart } from "./src/cart/addtoCart.js";
 
 window.addEventListener("load", () => {
-  console.log("js failed");
   setLoacalstorage("product", product);
   displayProduct(product);
   displayProductImg();
@@ -29,8 +29,10 @@ window.addEventListener("load", () => {
   amountVariation();
 });
 
-const addProdBtn = getElement(".add-to-cart");
-addProdBtn.addEventListener("click", function () {
+const confirm = getElement(".confirm");
+
+confirm.addEventListener("click", function () {
+  console.log("clicked");
   const id = product.id;
   addTocart(id);
 });

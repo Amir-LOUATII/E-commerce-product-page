@@ -90,10 +90,11 @@ function intializeCart() {
       return item;
     });
     addTocartDOM(item);
+    removeProduct();
+    cartTotal();
   } else {
     emptyMsg.classList.remove("hide");
   }
-  cartTotal();
 }
 
 // calculate the total

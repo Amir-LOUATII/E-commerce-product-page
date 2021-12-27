@@ -18,24 +18,22 @@ function slider() {
   let currentItem = 0;
   // next button
   sliderNextBtn.addEventListener("click", function () {
+    currentItem++;
     if (currentItem > img.length - 1) {
       currentItem = 0;
     }
     sliderImg.src = img[currentItem];
-    currentItem++;
   });
 
   // prev button
   sliderPrevBtn.addEventListener("click", function () {
+    currentItem--;
     if (currentItem < 0) {
       currentItem = img.length - 1;
     }
 
     sliderImg.src = img[currentItem];
-
-    currentItem--;
   });
 }
-
 
 export { slider };

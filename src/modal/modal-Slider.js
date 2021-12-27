@@ -37,6 +37,7 @@ function modalSlider() {
   let currentItem = 0;
   // next button
   modalNextBtn.addEventListener("click", function () {
+    currentItem++;
     if (currentItem > img.length - 1) {
       currentItem = 0;
     }
@@ -44,18 +45,16 @@ function modalSlider() {
     modalBigImg.src = img[currentItem];
     // add active class
     addACtiveClass(currentItem, Smallimg);
-    currentItem++;
   });
 
   modalPrevBtn.addEventListener("click", function () {
+    currentItem--;
     if (currentItem < 0) {
       currentItem = img.length - 1;
     }
     // add active class
     addACtiveClass(currentItem, Smallimg);
     modalBigImg.src = img[currentItem];
-
-    currentItem--;
   });
 }
 
