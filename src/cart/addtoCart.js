@@ -11,6 +11,7 @@ const amountDOM = getElement(".amount-value");
 const addProdBtn = getElement(".add-to-cart");
 const cartContent = getElement(".cart-content");
 const emptyMsg = getElement(".empty-cart");
+const checkoutBtn = getElement(".checkout");
 
 let cart = getLocalStorageItem("cart");
 // add product to cart
@@ -29,6 +30,7 @@ function addTocart(id) {
       // get number of product to add
       prodCart.amount = parseInt(amountDOM.textContent);
       cart.push(prodCart);
+      checkoutBtn.classList.remove("hide");
       addTocartDOM(prodCart);
       setLoacalstorage("cart", cart);
       cartTotal();
@@ -94,6 +96,7 @@ function intializeCart() {
     cartTotal();
   } else {
     emptyMsg.classList.remove("hide");
+    checkoutBtn.classList.add("hide");
   }
 }
 
